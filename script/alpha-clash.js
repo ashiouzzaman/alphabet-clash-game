@@ -1,6 +1,15 @@
 function continueGame(){
+
+    // Step 1: Generate a random Alphabet
     const alphabet = getArandomAlphabet();
     console.log(alphabet)
+
+    // Step 2: Show the random alphabet to the screen
+    const currentAlphabet = document.getElementById('current-alphabet');
+    currentAlphabet.innerText = alphabet
+
+    // Step 3: Set bg color
+    setBackgroundColor(alphabet)
 }
 
 
